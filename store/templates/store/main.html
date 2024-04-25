@@ -9,7 +9,9 @@
 	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
 
 	<link rel="stylesheet" type="text/css" href="{% static 'css/main.css' %}">
-	
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
 	<script type="text/javascript">
 		var user = '{{request.user}}'
 
@@ -90,11 +92,12 @@
 
 	<div class="logo-title">
 		<h1 class="logo-name">BuyFi: Your one stop Buy</h1>
+		<h1 class="logo-subname">The best one stop buy for all your needs.</h1>
+		<h1 class="logo-subname">Buy, Try, Repeat!</h1>
 		<div class="form-inline my-2 my-lg-0 my-cart">
-			
-			<a href="{% url 'cart' %}">
-			   <h1 class="btn btn-warning">Add to cart</h1>
-		   </a>
+		<a href="{% url 'cart' %}">
+			<h1 class="btn btn-warning my-2">Add to cart</h1>
+		</a>
 
 	   </div>
 	</div>
@@ -111,10 +114,10 @@
 				<img class="d-block w-100 my-carousel" src="{% static 'images/img1.jpg' %}" alt="First slide">
 			  </div>
 			  <div class="carousel-item">
-				<img class="d-block w-100 my-carousel" src="{% static 'images/img4.webp' %}" alt="Second slide">
+				<img class="d-block w-100 my-carousel" src="{% static 'images/fimg.webp' %}" alt="Second slide">
 			  </div>
 			  <div class="carousel-item">
-				<img class="d-block w-100 my-carousel" src="{% static 'images/img3.jpg' %}" alt="Third slide">
+				<img class="d-block w-100 my-carousel" src="{% static 'images/imgg.webp' %}" alt="Third slide">
 			  </div>
 			</div>
 			<a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
@@ -141,6 +144,8 @@
 	<br>
 	<div class="my-footer">
 		<h2 class="footer-text">Contact us</h2>
+		<h2 class="footer-subtext">buyfi@gmail.com</h2>
+		<h2 class="footer-subtext">Support info: +91-2345678909</h2>
 	</div>
 
 

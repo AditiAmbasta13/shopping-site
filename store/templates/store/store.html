@@ -2,13 +2,13 @@
 {% load static %}
 {% block content %}
 	<div>
-		<h1>Our Products</h1>
+		<h1  class="heading">Our Products</h1>
 	</div>
 	<div class="row">
 		{% for product in products %}
 		<div class="col-lg-4">
 			<img class="thumbnail" src="{{product.imageURL}}">
-			<div class="box-element product">
+			<div class="box-element product boxes">
 				<h6><strong>{{product.name}}</strong></h6>
 				<hr>
 
@@ -24,13 +24,13 @@
 	<br>
 	<br>
 	<div>
-		<h1>Trending Now</h1>
+		<h1  class="heading">Trending Now</h1>
 	</div>
 	<div class="row">
 		{% for product in products %}
 		<div class="col-lg-4">
 			<img class="thumbnail" src="{{product.imageURL}}">
-			<div class="box-element product">
+			<div class="box-element product boxes">
 				<h6><strong>{{product.name}}</strong></h6>
 				<hr>
 
